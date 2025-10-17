@@ -13,11 +13,11 @@ public class MoveBehavior : MonoBehaviour
     {
         if (Mathf.Abs(direction.x) > 0) //Usamos Abs, para saber si hay movimeinto en X, nos da igual si es negativo o positivo.
         {
-            _rb.linearVelocity = direction.normalized * speed;
+            _rb.linearVelocity = new Vector2 (direction.x * speed, _rb.linearVelocityY);
         }
         else
         {
-            _rb.linearVelocity = Vector2.zero;
+            _rb.linearVelocityX = 0;
         }
     }
     public void EnemyPatrol(float _enemyLimitPositionXPositive, float _enemyLimitPositionXNegative)
@@ -31,7 +31,7 @@ public class MoveBehavior : MonoBehaviour
             _direction = 1;
         }
 
-        _rb.linearVelocity = new Vector2(_direction * speed, 0);
+        _rb.linearVelocity = new Vector2(_direction * speed, _rb.linearVelocityY);
     }
 }
 
