@@ -18,6 +18,6 @@ public class CharacterEX2 : MonoBehaviour, IDammageable
     public void Hurt(int dmg)
     {
         Debug.Log("Ay");
-        HP--;
+        HP = -dmg;
     }
 }
