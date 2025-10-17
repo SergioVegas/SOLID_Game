@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyEX2 : MonoBehaviour, IDammageable
+public class EnemyEX2 : CharacterEX2, IDammageable
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
