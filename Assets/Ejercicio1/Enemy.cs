@@ -35,17 +35,4 @@ public class Enemy : MonoBehaviour
         _currentJumpInterval = Random.Range(1f, 4f);
         _nextJumpTime = Time.time + _currentJumpInterval;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (collision.gameObject.layer == 6)//El numero es la layer en la que esta el player
-        {
-           
-        }
-        if (collision.gameObject.layer == 8)
-        {
-            Destroy(collision.gameObject);
-            spawner.Push(gameObject);
-        }
-    }
 }

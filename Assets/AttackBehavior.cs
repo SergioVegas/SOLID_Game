@@ -14,9 +14,8 @@ public class AttackBehavior : MonoBehaviour
 
     }
     public void Attack(GameObject target)
-    {
-        // Aquí puedes aplicar daño al objetivo si tiene un componente de salud
-        var health = target.GetComponent<Health>();
+    { 
+        var health = target.GetComponent<target.health>();
         if (health != null)
         {
             health.TakeDamage(damage);
