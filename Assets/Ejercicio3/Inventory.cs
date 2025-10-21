@@ -14,7 +14,7 @@ public class Inventory: MonoBehaviour
     {
         currentItem.UseItem();
     }
-    public void Update()
+    public void Start()
     {
         UseItem();
     }
