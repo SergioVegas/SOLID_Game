@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Axe : MonoBehaviour
 {
-    public int dammage = 3;
+    [SerializeField]private int dammage;
     private bool _canAttack = true;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -15,6 +15,6 @@ public class Axe : MonoBehaviour
     }
     public void CanAttackAgain()
     {
-
+        _canAttack = true;
     }
 }

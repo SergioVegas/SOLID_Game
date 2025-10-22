@@ -11,8 +11,7 @@ public class Enemy : MonoBehaviour
     private float _enemyLimitPositionXNegative = -3;
     private float _nextJumpTime;
     private float _currentJumpInterval;
-    private int health = 8;
-    private Axe enemyAttack;
+    
     private void Awake()
     {
         transform.position = initialPosition;

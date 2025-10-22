@@ -8,8 +8,6 @@ public class Player : MonoBehaviour
     protected JumpBehavior _jm;
     private Vector2 initialPosition = new Vector2(1, 1);
     private float timeJump = 1f;
-    private int health = 10;
-    private Axe playerAttack;
     private void Awake()
     {
         transform.position = initialPosition;
